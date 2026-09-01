@@ -1,25 +1,30 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f1eaff"><title>윤후에게 | 난초반 8월의 편지</title><style>:root{--paper:#f1eaff;--rule:#d5c8ed;--accent:#7459a8;--accent2:#ef9e98;--tape:#cabbe8;}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:#28231f}
-body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;background:linear-gradient(135deg,#f6f7f9,#fff 45%,#f1f4f7)}
-.wrap{width:min(820px,100%)}
-.note{--paper:#fff5cf;--rule:#f2d98a;--accent:#3e7d62;--accent2:#f0b95c;--tape:#c8d8bc;position:relative;margin-top:30px;border:3px solid #222;border-radius:3px;background:var(--paper);box-shadow:0 14px 30px rgba(0,0,0,.10);padding:58px clamp(24px,6vw,58px) 38px;overflow:visible}
-.note.grid{background-color:var(--paper);background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:24px 24px}
-.note.line{background-color:var(--paper);background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,var(--rule) 32px)}
-.rings{position:absolute;left:34px;right:34px;top:-31px;height:53px;display:flex;justify-content:space-between;pointer-events:none}
-.ring{width:18px;height:47px;border:4px solid #202020;border-radius:50%;background:#fff;transform:rotate(2deg)}
-.header{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:24px;margin-bottom:28px;position:relative;z-index:2}
-.month{font-size:clamp(56px,11vw,92px);line-height:.8;font-weight:1000;letter-spacing:-.09em;color:var(--accent);text-shadow:3px 3px 0 #fff,-2px -2px 0 #fff;white-space:nowrap}
-.month small{font-size:.55em;margin-left:2px}.recipient{font-size:clamp(28px,6vw,44px);font-weight:900;letter-spacing:-.06em;padding-bottom:8px;border-bottom:4px solid var(--accent2);display:inline-block;width:max-content;max-width:100%}
-.greeting{font-size:clamp(19px,4.2vw,24px);font-weight:900;margin:12px 0 20px;color:#332b28}
-.letter{position:relative;z-index:2;background:rgba(255,255,255,.25);padding:0 4px}
-p{font-size:clamp(16px,3.8vw,19px);line-height:1.88;letter-spacing:-.025em;margin:0 0 15px;word-break:keep-all;font-weight:600}
-.sign{margin-top:28px;text-align:right;font-size:15px;line-height:1.75;font-weight:800;color:#55483e}
-.sticker{position:absolute;right:18px;top:76px;font-size:42px;filter:drop-shadow(0 2px 0 rgba(255,255,255,.9));transform:rotate(7deg);z-index:1}.doodle{position:absolute;left:19px;bottom:12px;font-size:28px;transform:rotate(-8deg)}
-.tape{position:absolute;width:120px;height:29px;background:var(--tape);opacity:.78;right:-18px;bottom:16px;transform:rotate(-7deg);border-radius:2px;background-image:radial-gradient(rgba(255,255,255,.9) 1.5px,transparent 1.5px);background-size:13px 13px}
-.footer{text-align:center;margin-top:14px;font-size:12px;font-weight:700;color:#777}
-@media(max-width:560px){body{padding:14px}.note{margin-top:24px;padding:50px 20px 30px}.rings{left:20px;right:20px;top:-27px}.ring{width:15px;height:41px;border-width:3px}.header{grid-template-columns:1fr;gap:12px;align-items:start}.month{font-size:64px}.recipient{font-size:31px}.sticker{font-size:34px;top:92px;right:13px}.tape{width:88px}}
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f1e5dc"><title>윤후에게 | 난초반 8월의 편지</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:#2d2925}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;background:#f3f5f7}
+.page{width:min(820px,100%);position:relative}
+.paper{position:relative;min-height:570px}
+.month{font-weight:1000;letter-spacing:-.09em;line-height:.85}
+.to{font-weight:900;letter-spacing:-.055em}
+.letter{font-size:clamp(16px,2.6vw,20px);line-height:1.9;letter-spacing:-.025em;word-break:keep-all}
+.greeting{font-size:1.13em;font-weight:900;margin-bottom:12px}
+.letter p{margin:0 0 15px}
+.sign{margin-top:26px;text-align:right;font-weight:800;line-height:1.65}
+.footer{text-align:center;margin-top:14px;font-size:12px;color:#777}
+@media(max-width:560px){body{padding:14px}.paper{min-height:auto}.letter{line-height:1.78}.sign{margin-top:18px}}
+
+body{background:linear-gradient(180deg,#eaf5f5,#f8fbfb)}
+.page:before{content:"";position:absolute;top:-35px;left:4%;right:4%;height:6px;background:#68594c;border-radius:5px}
+.paper{padding:70px clamp(28px,6vw,62px) 42px;background:#fffaf7;border-radius:20px;box-shadow:0 15px 35px #0002;border:2px solid #b98c6d}
+.str1,.str2{position:absolute;top:-31px;width:3px;height:70px;background:#68594c}.str1{left:18%}.str2{right:18%}
+.peg1,.peg2{position:absolute;top:-7px;width:30px;height:42px;background:#b98c6d;border-radius:5px;transform:rotate(4deg);box-shadow:0 3px 6px #0003}.peg1{left:calc(18% - 14px)}.peg2{right:calc(18% - 14px);transform:rotate(-4deg)}
+.head{text-align:center;margin-bottom:28px}
+.month{font-size:54px;color:#b98c6d;letter-spacing:.02em}
+.to{font-size:43px;margin-top:8px}
+.ribbon{display:inline-block;background:#f1e5dc;padding:8px 25px;border-radius:999px;margin-top:8px;font-size:14px;font-weight:800;color:#6d4a38}
 </style></head>
-<body><main class="wrap"><section class="note grid"><div class="rings"><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span></div><div class="sticker">🪻</div><div class="header"><div class="month">8<small>월</small></div><div class="recipient">윤후에게</div></div><div class="letter"><div class="greeting">윤후야,</div><p>다시 함께하는 2학기가 시작됐구나! 이번 학기에는 윤후가 가진 생각과 장점을 더 멋지게 보여 줄 기회가 많았으면 좋겠어.</p>
-<p>때로는 내 마음대로 되지 않는 일이 생기더라도 잠깐 생각하고 다시 시작하는 힘을 길러 보는 것도 좋은 도전이 될 거야. 친구들과 즐겁게 지내면서 서로에게 좋은 영향을 주는 윤후의 모습을 기대하고 있을게.</p>
-<p>우리 남은 5학년도 좋은 기억으로 가득 채워 보자!</p><div class="sign">9월에도 함께 좋은 추억 많이 만들자!<br>난초반 담임 선생님이</div></div><div class="doodle">♡</div><div class="tape"></div></section><div class="footer">2026 · 난초반의 두 번째 학기를 시작하며</div></main></body></html>
+<body><main class="page"><section class="paper"><div class="str1"></div><div class="str2"></div><div class="peg1"></div><div class="peg2"></div><div class="head"><div class="month">8월</div><div class="to">윤후에게</div><div class="ribbon">선생님이 보내는 작은 응원</div></div><div class="letter"><div class="greeting">윤후야,</div><p>다시 함께하는 2학기가 시작됐구나! 이번 학기에는 윤후가 가진 생각과 장점을 더 멋지게 보여 줄 기회가 많았으면 좋겠어.</p><p>때로는 내 마음대로 되지 않는 일이 생기더라도 잠깐 생각하고 다시 시작하는 힘을 길러 보는 것도 좋은 도전이 될 거야. 친구들과 즐겁게 지내면서 서로에게 좋은 영향을 주는 윤후의 모습을 기대하고 있을게.</p><p>우리 남은 5학년도 좋은 기억으로 가득 채워 보자!</p><div class="sign">9월에도 함께 좋은 추억 많이 만들자!<br>난초반 담임 선생님이</div></div></section>
+<div class="footer">2026 · 난초반의 두 번째 학기를 시작하며</div></main></body></html>

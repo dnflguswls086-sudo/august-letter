@@ -1,25 +1,28 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e8f6e8"><title>이현이에게 | 난초반 8월의 편지</title><style>:root{--paper:#e8f6e8;--rule:#bdddbf;--accent:#3d8b76;--accent2:#f2b86b;--tape:#a8d4a8;}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:#28231f}
-body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;background:linear-gradient(135deg,#f6f7f9,#fff 45%,#f1f4f7)}
-.wrap{width:min(820px,100%)}
-.note{--paper:#fff5cf;--rule:#f2d98a;--accent:#3e7d62;--accent2:#f0b95c;--tape:#c8d8bc;position:relative;margin-top:30px;border:3px solid #222;border-radius:3px;background:var(--paper);box-shadow:0 14px 30px rgba(0,0,0,.10);padding:58px clamp(24px,6vw,58px) 38px;overflow:visible}
-.note.grid{background-color:var(--paper);background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:24px 24px}
-.note.line{background-color:var(--paper);background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,var(--rule) 32px)}
-.rings{position:absolute;left:34px;right:34px;top:-31px;height:53px;display:flex;justify-content:space-between;pointer-events:none}
-.ring{width:18px;height:47px;border:4px solid #202020;border-radius:50%;background:#fff;transform:rotate(2deg)}
-.header{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:24px;margin-bottom:28px;position:relative;z-index:2}
-.month{font-size:clamp(56px,11vw,92px);line-height:.8;font-weight:1000;letter-spacing:-.09em;color:var(--accent);text-shadow:3px 3px 0 #fff,-2px -2px 0 #fff;white-space:nowrap}
-.month small{font-size:.55em;margin-left:2px}.recipient{font-size:clamp(28px,6vw,44px);font-weight:900;letter-spacing:-.06em;padding-bottom:8px;border-bottom:4px solid var(--accent2);display:inline-block;width:max-content;max-width:100%}
-.greeting{font-size:clamp(19px,4.2vw,24px);font-weight:900;margin:12px 0 20px;color:#332b28}
-.letter{position:relative;z-index:2;background:rgba(255,255,255,.25);padding:0 4px}
-p{font-size:clamp(16px,3.8vw,19px);line-height:1.88;letter-spacing:-.025em;margin:0 0 15px;word-break:keep-all;font-weight:600}
-.sign{margin-top:28px;text-align:right;font-size:15px;line-height:1.75;font-weight:800;color:#55483e}
-.sticker{position:absolute;right:18px;top:76px;font-size:42px;filter:drop-shadow(0 2px 0 rgba(255,255,255,.9));transform:rotate(7deg);z-index:1}.doodle{position:absolute;left:19px;bottom:12px;font-size:28px;transform:rotate(-8deg)}
-.tape{position:absolute;width:120px;height:29px;background:var(--tape);opacity:.78;right:-18px;bottom:16px;transform:rotate(-7deg);border-radius:2px;background-image:radial-gradient(rgba(255,255,255,.9) 1.5px,transparent 1.5px);background-size:13px 13px}
-.footer{text-align:center;margin-top:14px;font-size:12px;font-weight:700;color:#777}
-@media(max-width:560px){body{padding:14px}.note{margin-top:24px;padding:50px 20px 30px}.rings{left:20px;right:20px;top:-27px}.ring{width:15px;height:41px;border-width:3px}.header{grid-template-columns:1fr;gap:12px;align-items:start}.month{font-size:64px}.recipient{font-size:31px}.sticker{font-size:34px;top:92px;right:13px}.tape{width:88px}}
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff0dc"><title>이현이에게 | 난초반 8월의 편지</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:#2d2925}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;background:#f3f5f7}
+.page{width:min(820px,100%);position:relative}
+.paper{position:relative;min-height:570px}
+.month{font-weight:1000;letter-spacing:-.09em;line-height:.85}
+.to{font-weight:900;letter-spacing:-.055em}
+.letter{font-size:clamp(16px,2.6vw,20px);line-height:1.9;letter-spacing:-.025em;word-break:keep-all}
+.greeting{font-size:1.13em;font-weight:900;margin-bottom:12px}
+.letter p{margin:0 0 15px}
+.sign{margin-top:26px;text-align:right;font-weight:800;line-height:1.65}
+.footer{text-align:center;margin-top:14px;font-size:12px;color:#777}
+@media(max-width:560px){body{padding:14px}.paper{min-height:auto}.letter{line-height:1.78}.sign{margin-top:18px}}
+
+body{background:#f7f4ee}
+.paper{padding:58px clamp(26px,6vw,62px) 42px;background:#fff0dc;box-shadow:12px 12px 0 #e4a36555,24px 24px 0 #7d563422;transform:rotate(-.5deg);border-radius:2px}
+.paper:before{content:"";position:absolute;width:150px;height:34px;background:#ffffffa8;top:-12px;left:50%;transform:translateX(-50%) rotate(2deg);box-shadow:0 2px 3px #0001}
+.head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #e4a365;padding-bottom:16px;margin-bottom:24px}
+.month{font-size:62px;color:#e4a365}
+.to{font-size:39px}
+.corner{position:absolute;right:18px;bottom:15px;font-size:48px;color:#e4a365;transform:rotate(-12deg)}
 </style></head>
-<body><main class="wrap"><section class="note grid"><div class="rings"><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span></div><div class="sticker">🌿</div><div class="header"><div class="month">8<small>월</small></div><div class="recipient">이현이에게</div></div><div class="letter"><div class="greeting">이현아,</div><p>여름방학을 보내고 다시 만나서 정말 반가웠어. 2학기에는 이현이가 자신만의 속도로 차근차근 성장했으면 좋겠어.</p>
-<p>다른 친구보다 빠른 것이 중요한 게 아니라, 어제보다 한 가지라도 더 알게 되고 한 번이라도 더 용기를 내는 것이 중요하단다. 힘든 일이 있을 때 혼자 고민하지 말고 친구나 선생님에게 도움을 요청해도 좋아.</p>
-<p>선생님은 언제든 이현이 편에서 응원하고 있을게!</p><div class="sign">9월에도 함께 좋은 추억 많이 만들자!<br>난초반 담임 선생님이</div></div><div class="doodle">♡</div><div class="tape"></div></section><div class="footer">2026 · 난초반의 두 번째 학기를 시작하며</div></main></body></html>
+<body><main class="page"><section class="paper"><div class="corner">♡</div><div class="head"><div class="month">8월</div><div class="to">이현이에게</div></div><div class="letter"><div class="greeting">이현아,</div><p>여름방학을 보내고 다시 만나서 정말 반가웠어. 2학기에는 이현이가 자신만의 속도로 차근차근 성장했으면 좋겠어.</p><p>다른 친구보다 빠른 것이 중요한 게 아니라, 어제보다 한 가지라도 더 알게 되고 한 번이라도 더 용기를 내는 것이 중요하단다. 힘든 일이 있을 때 혼자 고민하지 말고 친구나 선생님에게 도움을 요청해도 좋아.</p><p>선생님은 언제든 이현이 편에서 응원하고 있을게!</p><div class="sign">9월에도 함께 좋은 추억 많이 만들자!<br>난초반 담임 선생님이</div></div></section>
+<div class="footer">2026 · 난초반의 두 번째 학기를 시작하며</div></main></body></html>
