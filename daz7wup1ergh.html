@@ -1,17 +1,25 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#edf5ff"><title>가빈이에게 | 난초반 8월의 편지</title><style>
-:root{--navy:#1f3a66;--blue:#4b75aa;--paper:#fffdf8;--ink:#313845;--soft:#eaf2fb;--line:#d7e4f3;}
-*{box-sizing:border-box} body{margin:0;min-height:100vh;background:linear-gradient(150deg,#edf5ff 0%,#fffdf8 52%,#f2f7ff 100%);font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:var(--ink);display:flex;align-items:center;justify-content:center;padding:22px}
-.wrap{width:min(760px,100%)}
-.top{text-align:center;margin-bottom:13px;color:var(--navy)}
-.kicker{font-size:13px;letter-spacing:.18em;font-weight:800;opacity:.68;margin-bottom:7px}.top h1{margin:0;font-size:clamp(26px,6vw,40px);letter-spacing:-.05em}.top .month{font-size:14px;margin-top:7px;opacity:.7}
-.card{position:relative;background:rgba(255,253,248,.97);border:1px solid var(--line);border-radius:26px;padding:clamp(25px,6vw,52px);box-shadow:0 18px 55px rgba(31,58,102,.13);overflow:hidden}
-.card:before,.card:after{content:"";position:absolute;border-radius:999px;background:var(--soft);z-index:0}.card:before{width:180px;height:180px;right:-70px;top:-85px}.card:after{width:120px;height:120px;left:-50px;bottom:-55px}.content{position:relative;z-index:1}
-.to{font-size:clamp(25px,6vw,36px);font-weight:900;color:var(--navy);margin-bottom:25px;letter-spacing:-.05em}.hello{font-size:19px;font-weight:800;color:var(--blue);margin-bottom:18px}
-p{font-size:clamp(16px,4vw,18px);line-height:1.92;letter-spacing:-.02em;margin:0 0 17px;word-break:keep-all}.sign{margin-top:30px;padding-top:21px;border-top:1px dashed #b9cce4;text-align:right;line-height:1.8;font-weight:700;color:#47617f}.tiny{text-align:center;font-size:12px;color:#7a8ca3;margin-top:14px}
-.heart{display:inline-block;animation:float 2.3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-4px)}}
-@media(max-width:480px){body{padding:14px}.card{border-radius:20px;padding:26px 22px}.hello{font-size:17px}p{line-height:1.84}}
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff0df"><title>가빈이에게 | 난초반 8월의 편지</title><style>:root{--paper:#fff0df;--rule:#efceb0;--accent:#b66a45;--accent2:#75a48c;--tape:#e4c596;}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;color:#28231f}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;background:linear-gradient(135deg,#f6f7f9,#fff 45%,#f1f4f7)}
+.wrap{width:min(820px,100%)}
+.note{--paper:#fff5cf;--rule:#f2d98a;--accent:#3e7d62;--accent2:#f0b95c;--tape:#c8d8bc;position:relative;margin-top:30px;border:3px solid #222;border-radius:3px;background:var(--paper);box-shadow:0 14px 30px rgba(0,0,0,.10);padding:58px clamp(24px,6vw,58px) 38px;overflow:visible}
+.note.grid{background-color:var(--paper);background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:24px 24px}
+.note.line{background-color:var(--paper);background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,var(--rule) 32px)}
+.rings{position:absolute;left:34px;right:34px;top:-31px;height:53px;display:flex;justify-content:space-between;pointer-events:none}
+.ring{width:18px;height:47px;border:4px solid #202020;border-radius:50%;background:#fff;transform:rotate(2deg)}
+.header{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:24px;margin-bottom:28px;position:relative;z-index:2}
+.month{font-size:clamp(56px,11vw,92px);line-height:.8;font-weight:1000;letter-spacing:-.09em;color:var(--accent);text-shadow:3px 3px 0 #fff,-2px -2px 0 #fff;white-space:nowrap}
+.month small{font-size:.55em;margin-left:2px}.recipient{font-size:clamp(28px,6vw,44px);font-weight:900;letter-spacing:-.06em;padding-bottom:8px;border-bottom:4px solid var(--accent2);display:inline-block;width:max-content;max-width:100%}
+.greeting{font-size:clamp(19px,4.2vw,24px);font-weight:900;margin:12px 0 20px;color:#332b28}
+.letter{position:relative;z-index:2;background:rgba(255,255,255,.25);padding:0 4px}
+p{font-size:clamp(16px,3.8vw,19px);line-height:1.88;letter-spacing:-.025em;margin:0 0 15px;word-break:keep-all;font-weight:600}
+.sign{margin-top:28px;text-align:right;font-size:15px;line-height:1.75;font-weight:800;color:#55483e}
+.sticker{position:absolute;right:18px;top:76px;font-size:42px;filter:drop-shadow(0 2px 0 rgba(255,255,255,.9));transform:rotate(7deg);z-index:1}.doodle{position:absolute;left:19px;bottom:12px;font-size:28px;transform:rotate(-8deg)}
+.tape{position:absolute;width:120px;height:29px;background:var(--tape);opacity:.78;right:-18px;bottom:16px;transform:rotate(-7deg);border-radius:2px;background-image:radial-gradient(rgba(255,255,255,.9) 1.5px,transparent 1.5px);background-size:13px 13px}
+.footer{text-align:center;margin-top:14px;font-size:12px;font-weight:700;color:#777}
+@media(max-width:560px){body{padding:14px}.note{margin-top:24px;padding:50px 20px 30px}.rings{left:20px;right:20px;top:-27px}.ring{width:15px;height:41px;border-width:3px}.header{grid-template-columns:1fr;gap:12px;align-items:start}.month{font-size:64px}.recipient{font-size:31px}.sticker{font-size:34px;top:92px;right:13px}.tape{width:88px}}
 </style></head>
-<body><main class="wrap"><header class="top"><div class="kicker">NANCHO CLASS · LETTER</div><h1>8월의 편지 <span class="heart">💌</span></h1><div class="month">2026년, 우리의 두 번째 학기를 시작하며</div></header><section class="card"><div class="content"><div class="to">가빈이에게</div><div class="hello">가빈아,</div><p>오랜만에 다시 만나니 참 반가웠어. 학교생활에서 가장 좋은 기억은 공부한 내용보다 친구들과 함께 웃었던 순간일 때가 많은 것 같아.</p>
+<body><main class="wrap"><section class="note line"><div class="rings"><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="ring"></span></div><div class="sticker">🍀</div><div class="header"><div class="month">8<small>월</small></div><div class="recipient">가빈이에게</div></div><div class="letter"><div class="greeting">가빈아,</div><p>오랜만에 다시 만나니 참 반가웠어. 학교생활에서 가장 좋은 기억은 공부한 내용보다 친구들과 함께 웃었던 순간일 때가 많은 것 같아.</p>
 <p>이번 학기에는 가빈이가 친구들과 좋은 이야기를 많이 나누고, 서로 도우면서 즐겁게 지냈으면 좋겠어. 물론 가빈이 자신이 하고 싶은 일에도 마음껏 도전하고!</p>
-<p>2학기가 끝났을 때 “정말 재미있었다!”라고 말할 수 있는 시간이 되길 바란다.</p><div class="sign">9월에도 함께 좋은 추억 많이 만들자!<br>난초반 담임 선생님이</div></div></section><div class="tiny">이 편지는 너에게 보내는 작은 응원이야 🌱</div></main></body></html>
+<p>2학기가 끝났을 때 “정말 재미있었다!”라고 말할 수 있는 시간이 되길 바란다.</p><div class="sign">9월에도 함께 좋은 추억 많이 만들자!<br>난초반 담임 선생님이</div></div><div class="doodle">♡</div><div class="tape"></div></section><div class="footer">2026 · 난초반의 두 번째 학기를 시작하며</div></main></body></html>
